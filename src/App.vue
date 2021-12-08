@@ -1,28 +1,94 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-card class="overflow-hidden">
+    <v-app-bar
+      absolute
+      color="white"
+      elevate-on-scroll
+      scroll-target="#scrolling-techniques-7"
+    >
+    <!-- BARRE NAVIGATION -->
+    <v-btn
+    color="primary"
+    elevation="0"
+    class="ma-3"
+    dressed
+    >
+    Home
+    </v-btn>
+
+    <v-btn
+    color="primary"
+    elevation="0"
+    text
+    class="ma-3"
+    >
+    AP
+    </v-btn>
+    <v-btn
+    color="primary"
+    elevation="0"
+    text
+    class="ma-2"
+    >
+    Compétences
+    </v-btn>
+    <v-btn
+    color="primary"
+    elevation="0"
+    text
+    class="ma-2"
+    >
+    A propos de moi 
+    </v-btn>
+    
+      
+
+      <v-spacer></v-spacer>
+
+      <v-btn icon>
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon>mdi-heart</v-icon>
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon>mdi-dots-vertical</v-icon>
+      </v-btn>
+
+    </v-app-bar>
+    <v-sheet
+      id="scrolling-techniques-7"
+      class="overflow-y-auto"
+      max-height="1500"
+    >
+   
+      <v-container style="height: 15000px;">
+      <v-main>
+      <HelloWorld/>
+    </v-main>
+      </v-container>
+    </v-sheet>
+  </v-card>
+<!--   APP BARR-->
+    
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {
+    HelloWorld,
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
