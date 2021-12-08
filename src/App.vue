@@ -9,16 +9,16 @@
     >
     <!-- BARRE NAVIGATION -->
     <v-btn
-    color="primary"
+    color="#7E57C2"
     elevation="0"
-    class="ma-3"
+    class="ma-3 white--text"
     dressed
     >
     Home
     </v-btn>
 
     <v-btn
-    color="primary"
+    color="#7E57C2"
     elevation="0"
     text
     class="ma-3"
@@ -26,7 +26,7 @@
     AP
     </v-btn>
     <v-btn
-    color="primary"
+    color="#7E57C2"
     elevation="0"
     text
     class="ma-2"
@@ -34,7 +34,7 @@
     Compétences
     </v-btn>
     <v-btn
-    color="primary"
+    color="#7E57C2"
     elevation="0"
     text
     class="ma-2"
@@ -46,17 +46,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
+     
 
     </v-app-bar>
     <v-sheet
@@ -64,7 +54,6 @@
       class="overflow-y-auto"
       max-height="1500"
     >
-   
       <v-container style="height: 15000px;">
       <v-main>
       <HelloWorld/>
