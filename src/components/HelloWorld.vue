@@ -1,34 +1,57 @@
 <template>
-  <v-container>
-    <v-row class="text-center">
-      
-      <v-col cols="12">test</v-col>
-      <v-col class="mb-4"
-      elevation>
-        <h1 class="display-2 font-weight-bold mb-3">
-          Bienvenue sur mon portfolio, je suis Miharisoa
+  <v-container fluid>  
+    <v-row class="text-center mt-13">
+     <v-col class="mb-2">
+        <h1 class="display-3 font-weight-bold mb-2">
+          Hey ! Je suis Miharisoa et bienvenu sur mon portfolio
         </h1>
       </v-col>
     </v-row>
-    <v-row class="ma-12">
-    <v-card
-    elevation="5"
-    >
-      <h1>Hey !</h1>
-      Etudiant au lycée VHB en BTS SIO depuis bientôt 2 ans !
+
+    <v-row class="ma-12 ">
+      <v-col>
+        <v-card elevation="5" class="ma-12" max-width="500">
+        <v-card-title> <h1> Hey !</h1> </v-card-title>
+          <v-card-text> Etudiant au lycée VHB en BTS SIO depuis bientôt 2 ans !<br>
+            Vous pouvez consultez mes Compétences
+          </v-card-text>
       
-  </v-card>
+          <v-btn color="#CFA0E9" fab small dark class="ma-3" @click:>
+            <v-icon>mdi-account</v-icon>
+          </v-btn>
+        </v-card>
+      </v-col>
+     
+      <v-col class="ml-16">
+        <v-img  max-height="380" max-width="500" src="../assets/pouce.png" ></v-img>
+      </v-col>
     </v-row>
     
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="ml-n7">
+      <path fill="#5000ca" fill-opacity="1" d="M0,256L40,218.7C80,181,160,107,240,90.7C320,75,400,117,480,154.7C560,192,640,224,720,208C800,192,880,128,960,133.3C1040,139,1120,213,1200,245.3C1280,277,1360,267,1400,261.3L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+    </svg>
+
   </v-container>
 </template>
 
 <script>
+  import anime from 'animejs/lib/anime.es.js';
+  
+
+
+  document.getElementById('pouce')
   export default {
     name: 'BaseVue',
-
+    
     data: () => ({
       
     }),
+    method: anime({
+            targets: '.pouce',
+            translateX: 250,
+            duration: 3000
+         }) 
+        
+            
   }
 </script>
