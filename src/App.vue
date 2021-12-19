@@ -10,7 +10,7 @@
     >
       <!-- BARRE NAVIGATION -->
       <v-btn
-      color="#7E57C2"
+      color="#5000ca"
       elevation="0"
       class="ma-3 white--text"
       dressed
@@ -19,7 +19,7 @@
       </v-btn>
 
       <v-btn
-      color="#7E57C2"
+      color="#5000ca"
       elevation="0"
       text
       class="ma-3"
@@ -27,7 +27,7 @@
         AP
       </v-btn>
       <v-btn
-      color=#7E57C2
+      color=#5000ca
       elevation="0"
       text
       class="ma-2"
@@ -35,7 +35,7 @@
         Compétences
     </v-btn>
     <v-btn
-    color="#7E57C2"
+    color="#5000ca"
     elevation="0"
     text
     class="ma-2"
