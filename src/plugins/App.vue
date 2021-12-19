@@ -6,11 +6,16 @@
       color="white"
       elevate-on-scroll
       scroll-target="#scrolling-techniques-7"
-      class="App-bar"
+    
     >
       <!-- BARRE NAVIGATION -->
-      <v-btn color="#5000ca" elevation="0" class="ma-3 white--text"  dressed>
-       <router-link to='/' style="text-decoration: none; color: inherit;">Home</router-link> 
+      <v-btn
+      color="#5000ca"
+      elevation="0"
+      class="ma-3 white--text"
+      dressed
+      >
+        Home
       </v-btn>
 
       <v-btn
@@ -19,25 +24,23 @@
       text
       class="ma-3"
       >
-       <router-link to='/AP' style="text-decoration: none; color: inherit;" >AP</router-link> 
+        AP
       </v-btn>
       <v-btn
       color=#5000ca
       elevation="0"
       text
       class="ma-2"
-      
       >
-        <router-link to='/Competences' style="text-decoration: none; color: inherit;">Compétences</router-link> 
+        Compétences
     </v-btn>
     <v-btn
     color="#5000ca"
     elevation="0"
     text
     class="ma-2"
-  
     >
-      <router-link to='/AboutMe' style="text-decoration: none; color: inherit;">A propos de moi</router-link> 
+      A propos de moi 
     </v-btn>
       <v-spacer></v-spacer>
     </v-app-bar>
@@ -75,8 +78,3 @@ export default {
   }),
 };
 </script>
-<style scoped>
-router-link a{
-    text-decoration: none; color: inherit;
-}
-</style>
