@@ -3,16 +3,16 @@
      <v-row class="text-center mt-13">
      <v-col class="mb-2">
         <h1 class="display-3 font-weight-bold mb-2">
-          A propos de <span style="color:#5000ca">moi</span> 
+          Mes <span style="color:#5000ca">compétences</span>
         </h1>
       </v-col>
     </v-row>
     <v-row class="ma-12">
-      <v-card>
-          <v-card-title >
-            test
-          </v-card-title >
-      </v-card>
+        <v-card>
+            <v-card-title >
+                test
+            </v-card-title >
+        </v-card>
     </v-row>
   </v-container>
 </template>
