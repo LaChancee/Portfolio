@@ -29,7 +29,7 @@ const routes = [
     name:'production',
     component: () => import(/* webpackChunkName: "about" */ '../views/Production.vue'),
     meta:{
-      title: 'AP'
+      title: 'Productions'
     }
   },
     {

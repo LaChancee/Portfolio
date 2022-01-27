@@ -1,7 +1,7 @@
 <template>
     <v-container fluid>
        
-        <v-row class="text-center mt-13">
+        <v-row class="text-center mt-13" >
             <v-col class="mb-2">
                 <h1 class="display-3 font-weight-bold mb-2">
                     Mes Ateliers de <span style="color:#5000ca">professionalisation</span>
@@ -9,7 +9,7 @@
             </v-col>
         </v-row>
          <!-- Une carte -->
-        <v-row class="ma-12">
+        <v-row class="ma-12" fluid>
             <v-col class="ml-1">
                 <v-card elevation="15" class="ma-12" max-width="450" height="430">
                 <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon>
@@ -24,7 +24,7 @@
                         <h4>Compétences visées</h4>       
                         <p>
                             B1.3 Développer la présence en ligne de l'organisation <br>
-                            B1.2 Répondre aux incidents et aux demandes d'assistance et d'évolution <br> <br> <br> <br>
+                            B1.2 Répondre aux incidents et aux demandes d'assistance et d'évolution <br> <br>
                         </p>
                         
                     </v-card-text>
@@ -61,7 +61,7 @@
                 </v-card>
             </v-col>
             <v-col class="ml-1">
-                <v-card elevation="15" class="ma-12" width="450" height="430">
+                <v-card elevation="15" class="ma-12" max-width="450" height="430">
                 <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon>
                  <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP1-3 </span>  </v-card-title>
                 
@@ -89,9 +89,9 @@
             </v-col>
         </v-row>
         <!-- ROW -->
-        <v-row class="ma-12">
+        <v-row class="ma-12" >
             <v-col class="ml-1">
-                <v-card elevation="15" class="ma-12" width="450" height="430">
+                <v-card elevation="15" class="ma-12" max-width="450" height="430">
                 <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon>
                  <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP1-4 </span>  </v-card-title>
                 
@@ -115,7 +115,7 @@
                 </v-card>
             </v-col>
             <v-col class="ml-1">
-                <v-card elevation="15" class="ma-12" width="450" height="430">
+                <v-card elevation="15" class="ma-12" max-width="450" height="430">
                 <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon>
                  <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP1-5 </span>  </v-card-title>
                 
@@ -148,7 +148,7 @@
                 </v-card>
             </v-col>
             <v-col class="ml-1">
-                <v-card elevation="15" class="ma-12" width="450" height="430">
+                <v-card elevation="15" class="ma-12" max-width="450" height="430">
                 <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon>
                  <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP2-0</span>  </v-card-title>
                 
@@ -177,7 +177,7 @@
         <!-- ROW -->
         <v-row class="ma-12">
             <v-col class="ml-1">
-                <v-card elevation="15" class="ma-12" width="450" height="430">
+                <v-card elevation="15" class="ma-12" max-width="450" height="430">
                 <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon>
                  <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP2-1 </span>  </v-card-title>
                 
@@ -193,7 +193,7 @@
                         </p>
                         
                         <h4>Compétences visées </h4>
-                        <v-btn x-small @click:>En savoir plus...</v-btn> <br> <br> <br>     
+                        <v-btn x-small @click:>En savoir plus...</v-btn> <br>    
                         
                         <!-- <p>
                             B1.1 Gérer le patrimoine informatique <br>
