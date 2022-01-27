@@ -13,7 +13,7 @@
           <h2><span style="color:#5000ca" class="font-weight-bold">Contexte :</span></h2>
             <p class="flex justify-center">Netkoders est une société créer par Michael Lebreton qui est le gérant de cette dernière, 
             ainsi chaque année il proposent à des étudiants de les prendre en stage pour finaliser ou commencer un projet. 
-            Cette société propose des prestations de service pour des créations de site ou application web ou autre en fonction des clients, 
+            Cette société propose des prestations de services pour des créations de site ou application web ou autre en fonction des clients, 
             de plus, Netkoders propose aussi des formations à différent tarifs. <br> 
             <br></p>
         </v-card>
@@ -26,10 +26,10 @@
       <v-col>
         <v-card width="700" height="640" elevation="15" shaped class="text-size"  >
           <v-card-title  >
-            <v-icon color="#5000ca">mdi-desktop-mac</v-icon> <span class="ml-2"> Mon stage de première année </span>
+            <v-icon color="#5000ca">mdi-desktop-mac</v-icon> <span class="ml-2"> Conception d'application permettant de créer des rapports  </span>
           </v-card-title >
           <v-card-text>
-            <h3>25 mai au 6 juillet</h3>
+            <h3>25 mai au 6 juillet 2021 pendant 6 semaines</h3>
             <p>Lors de cette année, j'ai effectué mon stage du 25 main au 6 juillet en distanciel en raison des conditions sanitaires.
             J'étais accompagné d'autres stagiaires afin de travailler sur un projet commun, <span style="color:#5000ca" class="font-weight-bold">Reportify</span>.</p>
              
@@ -51,19 +51,28 @@
               </p>
           </v-card-text>
           <v-card-action >
-                      <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" href="https://drive.google.com/drive/u/0/folders/1So0uJoJm3CmMpw28vQ56poXm5mDlFF53">
+                      <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" href="https://drive.google.com/drive/folders/1So0uJoJm3CmMpw28vQ56poXm5mDlFF53?usp=sharing">
                           Productions
                       </v-btn>
           </v-card-action>
         </v-card>
       </v-col>
       <v-col>
-        <v-card width="700" height="750" elevation="0" shaped class="mr-6">
+        <v-card width="700" height="640" elevation="15" shaped class="mr-6">
           <v-card-title  >
-            <v-icon color="#5000ca">mdi-desktop-mac</v-icon> <span class="ml-2"> Mon stage de deuxième année </span>
+            <v-icon color="#5000ca">mdi-desktop-mac</v-icon> <span class="ml-2"> Réalisation d'un site de e-commerce E-Store sous Laravel</span>
           </v-card-title >
+          <v-card-text>
+            <h3>4 janvier au 11 février 2022 pendant 5 semaines et 4 jours</h3>
+            <p>Cette année, j'ai effectué mon stage du 4 janvier au 11 février en distanciel toujours en raison des conditions sanitaires, 
+              à la différence par rapport à l'année précédente est que je suis accompagné d'un camarade de classe Erdi Pjetri, et d'autres stagiaires.</p>
+             <h3>Projet :</h3>
+             <p>Lors de ce deuxième stage nous avons eu le choix entre différents projets et nous pouvons travailler en groupe de dessus. Donc Erdi et moi
+              avons décidé de travailler  </p>
+          </v-card-text>
         </v-card>
       </v-col>
+    
     </v-row>
   </v-container>
 </template>
