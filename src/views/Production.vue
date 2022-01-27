@@ -13,7 +13,7 @@
             <v-col class="ml-1">
                 <v-card elevation="15" class="ma-12" max-width="450" height="430">
                 <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon>
-                 <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP1-1 HTML CSS</span>  </v-card-title>
+                 <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP1-1 </span>  </v-card-title>
                 
                     <v-card-text style="font-size:17px"> 
                         <h3>Developpement de site web en local</h3>
@@ -37,7 +37,7 @@
             <v-col class="ml-1">
                 <v-card elevation="15" class="ma-12" max-width="450" height="430">
                 <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon>
-                    <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP1-2 Formations aux outils numériques</span>  
+                    <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP1-2 </span>  
                  </v-card-title>
                 
                     <v-card-text style="font-size:17px"> 
@@ -63,7 +63,7 @@
             <v-col class="ml-1">
                 <v-card elevation="15" class="ma-12" width="450" height="430">
                 <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon>
-                 <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP1-3 Infrastructure réseau virtuelle</span>  </v-card-title>
+                 <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP1-3 </span>  </v-card-title>
                 
                     <v-card-text style="font-size:17px"> 
                         <h3>Infrastructure réseau virtuelle</h3>
@@ -93,7 +93,7 @@
             <v-col class="ml-1">
                 <v-card elevation="15" class="ma-12" width="450" height="430">
                 <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon>
-                 <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP1-4 Métiers du numériques</span>  </v-card-title>
+                 <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP1-4 </span>  </v-card-title>
                 
                     <v-card-text style="font-size:17px"> 
                         <h3>Entretien avec des anciens BTS SIO - Métiers du numériques</h3>
@@ -117,7 +117,7 @@
             <v-col class="ml-1">
                 <v-card elevation="15" class="ma-12" width="450" height="430">
                 <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon>
-                 <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP1-5 PCP</span>  </v-card-title>
+                 <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP1-5 </span>  </v-card-title>
                 
                     <v-card-text style="font-size:17px"> 
                         <h3>Réalisation du PCP (Porte-feuille de compétences Professionnel)</h3>
@@ -150,7 +150,7 @@
             <v-col class="ml-1">
                 <v-card elevation="15" class="ma-12" width="450" height="430">
                 <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon>
-                 <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP2-0 Gestion de projet</span>  </v-card-title>
+                 <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP2-0</span>  </v-card-title>
                 
                     <v-card-text style="font-size:17px"> 
                         <h3>Découverte de la gestion de projet</h3>
@@ -179,7 +179,7 @@
             <v-col class="ml-1">
                 <v-card elevation="15" class="ma-12" width="450" height="430">
                 <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon>
-                 <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP2-1 Déploiement Serveur et apllication web</span>  </v-card-title>
+                 <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP2-1 </span>  </v-card-title>
                 
                     <v-card-text style="font-size:17px"> 
                         <h3>Déploiement Serveur et apllication web</h3>
@@ -192,7 +192,8 @@
                             Enfin, pour la partie serveur nous avions utilisé une machine virtuelle Ubuntu, et le service proFTP pour le transfert de fichier. -->
                         </p>
                         
-                        <h4>Compétences visées <v-btn x-small @click:>En savoir plus...</v-btn> </h4>       
+                        <h4>Compétences visées </h4>
+                        <v-btn x-small @click:>En savoir plus...</v-btn> <br> <br> <br>     
                         
                         <!-- <p>
                             B1.1 Gérer le patrimoine informatique <br>
@@ -206,7 +207,7 @@
                             B3.5 A – SLAM – Assurer la cybersécurité d’une infrastructure réseau, d’un système, d’un service 
                         </p> -->
                     </v-card-text>
-                    <v-card-action>
+                    <v-card-action class="mb-3">
                         <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" href="https://drive.google.com/drive/folders/1_csoR_wMKsMH-eDcBW1wJbPlQGAFeZ8L">
                             <v-icon>mdi-folder-multiple</v-icon>
                         </v-btn>
@@ -216,7 +217,7 @@
             <v-col class="ml-1">
                 <v-card elevation="15" class="ma-12" width="450" height="430">
                 <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon>
-                 <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP2-2a Développement d'application de facturation client</span>  </v-card-title>
+                 <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP2-2a </span>  </v-card-title>
                 
                     <v-card-text style="font-size:17px"> 
                         <h3>Développement d'application de facturation client</h3>
@@ -229,11 +230,11 @@
                         <p>
                             B1.3 Organiser son développement professionnel <br>
                             B3.1 Protéger les données à caractère personnel <br>
-                            B1.4 Travailler en mode projet 
+                            B1.4 Travailler en mode projet <br> <br>
                         </p>
                     </v-card-text>
                     <v-card-action>
-                        <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" href="">
+                        <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" href="" mt-n2>
                             <v-icon>mdi-folder-multiple</v-icon>
                         </v-btn>
                     </v-card-action>
@@ -242,7 +243,7 @@
             <v-col class="ml-1">
                 <v-card elevation="15" class="ma-12" width="450" height="430">
                 <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon>
-                 <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP2-2b Labtainer</span>  </v-card-title>
+                 <span style="font-weight:bold" color="#5000ca" class="ml-2"> AP2-2b </span>  </v-card-title>
                 
                     <v-card-text style="font-size:17px"> 
                         <h3>Réalisation du Labtainer CyberLabs</h3>

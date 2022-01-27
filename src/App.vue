@@ -1,5 +1,5 @@
 <template>
-  <v-app fluid>
+  <v-app fluid flex>
     <v-card class="overflow-hidden" fluid> 
     <v-app-bar
       absolute
@@ -7,6 +7,8 @@
       elevate-on-scroll
       scroll-target="#scrolling-techniques-7"
       class="App-bar"
+      fluid 
+      flex
     >
     
       <!-- BARRE NAVIGATION -->
@@ -24,17 +26,13 @@
           Compétences
         </v-btn>
       </router-link> 
-    <router-link to='aboutme' style="text-decoration: none; color: inherit;">
+    <router-link to='stages' style="text-decoration: none; color: inherit;">
       <v-btn color="#5000ca" elevation="0" text class="ma-2">
-        A propos de moi
-      </v-btn>
-    </router-link>
-    <router-link to='stage' style="text-decoration: none; color: inherit;">
-      <v-btn disabled color="#5000ca" elevation="0" text class="ma-2">
+        
         Stages
       </v-btn>
-    </router-link>       
-    </v-app-bar>
+    </router-link>     
+  </v-app-bar>
 
     <v-sheet id="scrolling-techniques-7" class="overflow-y-auto" max-height="980" width="105%" >    
 <!--   APP BARR-->
