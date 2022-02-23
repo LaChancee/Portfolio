@@ -3,7 +3,7 @@
      <v-row class="text-center mt-13" fluid>
      <v-col class="mb-2">
         <h1 class="display-3 font-weight-bold mb-2">
-          Mes <span style="color:#5000ca">Stages </span> 
+          Mes <span style="color:#5000ca">stages </span> 
         </h1>
       </v-col>
     </v-row>
@@ -47,11 +47,11 @@
                 B1.4 Travailler en mode projet <br> 
                 B1.6 Organiser son développement professionnel <br>
                 B2.1 Concevoir et développer une solution applicative <br>
-                B2.3 Gérer les données 
+                B2.3 Gérer les données <br>
               </p>
           </v-card-text>
           <v-card-action >
-                      <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" href="https://drive.google.com/drive/folders/1So0uJoJm3CmMpw28vQ56poXm5mDlFF53?usp=sharing">
+                      <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" target="_blank" href="https://drive.google.com/drive/folders/1So0uJoJm3CmMpw28vQ56poXm5mDlFF53?usp=sharing">
                           Productions
                       </v-btn>
           </v-card-action>
@@ -68,8 +68,25 @@
               à la différence par rapport à l'année précédente est que je suis accompagné d'un camarade de classe Erdi Pjetri, et d'autres stagiaires.</p>
              <h3>Projet :</h3>
              <p>Lors de ce deuxième stage nous avons eu le choix entre différents projets et nous pouvons travailler en groupe de dessus. Donc Erdi et moi
-              avons décidé de travailler  </p>
+              avons décidé de travailler sur un site de e-commerce nommé <span style="color:#5000ca" class="font-weight-bold">E-Store</span>.
+              Donc à deux, nous créeons le site de zéro, mais avant ça nous devons étudier le projet, nous avons donc créer une maquette du site avec Figma, un diagramme
+              de classe et les user stories. Le projet est développé sous Laravel utilisant aussi le framework tailwindcss, nos tâches sont attribuées et validées
+              sur DevOps par notre tuteur. Chaque tâche correspond à une branche et à une Pull Request (une documentation sur cette méthode est disponible).
+              </p>
+              <h3>Compétences visées :</h3>
+              <p>B1. Gérer le patrimoine informatique <br>
+              B1.4 Travailler en mode projet <br>
+              B1.5 Mettre à disposition des utilisateurs un service informatique <br>
+              B1.6 Organiser son développement professionnel <br>
+              B2.3 Gérer les données <br> <br> <br>
+
+              </p>
           </v-card-text>
+           <v-card-action class="mt-4">
+            <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3"  target="_blank" href="https://drive.google.com/drive/folders/1FXU1OVct2lq2uiuOtwW5UtA_vgMXJ5sP?usp=sharing">
+                Productions
+            </v-btn>
+          </v-card-action>
         </v-card>
       </v-col>
     

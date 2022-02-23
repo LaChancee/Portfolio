@@ -4,7 +4,7 @@
         <v-row class="text-center mt-13" >
             <v-col class="mb-2">
                 <h1 class="display-3 font-weight-bold mb-2">
-                    Mes Ateliers de <span style="color:#5000ca">professionalisation</span>
+                    Mes ateliers de <span style="color:#5000ca">professionalisation</span>
                 </h1>
             </v-col>
         </v-row>
@@ -29,7 +29,7 @@
                         
                     </v-card-text>
             
-                    <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" href="https://drive.google.com/drive/folders/1LYdi71WNkFLMOCT_oUpR_nV_JTMm8P_Z?usp=sharing">
+                    <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" target="_blank" href="https://drive.google.com/drive/folders/1LYdi71WNkFLMOCT_oUpR_nV_JTMm8P_Z?usp=sharing">
                         <v-icon>mdi-folder-multiple</v-icon>
                     </v-btn>
                 </v-card>
@@ -55,7 +55,7 @@
                         </p>
                         </v-card-text>
             
-                    <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" href="https://drive.google.com/drive/folders/1YgHpJRZ41793jpldJnpveQhJ72_BW6Uw?usp=sharing">
+                    <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" target="_blank" href="https://drive.google.com/drive/folders/1YgHpJRZ41793jpldJnpveQhJ72_BW6Uw?usp=sharing">
                         <v-icon>mdi-folder-multiple</v-icon>
                     </v-btn>
                 </v-card>
@@ -81,7 +81,7 @@
                     </v-card-text>
             
                     <v-card-action>
-                        <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" href="https://drive.google.com/drive/folders/1sgJucez2Hz3aSK4VOwl_LRgxpJOBC5jb?usp=sharing">
+                        <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" target="_blank" href="https://drive.google.com/drive/folders/1sgJucez2Hz3aSK4VOwl_LRgxpJOBC5jb?usp=sharing">
                             <v-icon>mdi-folder-multiple</v-icon>
                         </v-btn>
                     </v-card-action>
@@ -108,7 +108,7 @@
                         </p>
                     </v-card-text>
                     <v-card-action>
-                        <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" href="https://drive.google.com/drive/folders/1JK85FqkXQXAo2R2HNJzKLhUerjPObPLc?usp=sharing">
+                        <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" target="_blank" href="https://drive.google.com/drive/folders/1JK85FqkXQXAo2R2HNJzKLhUerjPObPLc?usp=sharing">
                             <v-icon>mdi-folder-multiple</v-icon>
                         </v-btn>
                     </v-card-action>
@@ -208,31 +208,34 @@
                         </p> -->
                     </v-card-text>
                     <v-card-action class="mb-3">
-                        <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" href="https://drive.google.com/drive/folders/1_csoR_wMKsMH-eDcBW1wJbPlQGAFeZ8L">
+                        <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" target="_blank" href="https://drive.google.com/drive/folders/1_csoR_wMKsMH-eDcBW1wJbPlQGAFeZ8L">
                             <v-icon>mdi-folder-multiple</v-icon>
                         </v-btn>
                         
                         <v-btn class="ml-8" icon @click="show = !show">
                             <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
                         </v-btn>
-                    </v-card-action>
-                    <v-expand-transition>
+                         <v-expansion-transition v-model="panel">
                         <div v-show="show">
                             <v-divider></v-divider>
-
-                            <v-card-text elevation="15" class="ma-12" max-width="450">
-                                B1.1 Gérer le patrimoine informatique <br>
-                                B1.2 Répondre aux incidents et aux demandes d’assistance et d’évolution <br>
-                                B1.4 Travailler en mode projet <br> 
-                                B1.5 Mettre à disposition des utilisateurs un service informatique<br>
-                                B1.6 Organiser son développement professionnel <br>
-                                B3.1 Protéger les données à caractère personnel <br>
-                                B3.2 Préserver l’identité numérique de l’organisation <br>
-                                B3.4 Garantir la disponibilité, l’intégrité et la confidentialité des services informatiques et des données de l’organisation face aux cyberattaques <br>
-                                B3.5 A – SLAM – Assurer la cybersécurité d’une infrastructure réseau, d’un système, d’un service 
-                            </v-card-text>
+                            <v-expend-content>
+                                <v-card-text elevation="15" class="ma-12" max-width="450">
+                                    B1.1 Gérer le patrimoine informatique <br>
+                                    B1.2 Répondre aux incidents et aux demandes d’assistance et d’évolution <br>
+                                    B1.4 Travailler en mode projet <br> 
+                                    B1.5 Mettre à disposition des utilisateurs un service informatique<br>
+                                    B1.6 Organiser son développement professionnel <br>
+                                    B3.1 Protéger les données à caractère personnel <br>
+                                    B3.2 Préserver l’identité numérique de l’organisation <br>
+                                    B3.4 Garantir la disponibilité, l’intégrité et la confidentialité des services informatiques et des données de l’organisation face aux cyberattaques <br>
+                                    B3.5 A – SLAM – Assurer la cybersécurité d’une infrastructure réseau, d’un système, d’un service 
+                                </v-card-text>
+                            </v-expend-content>
+                           
                         </div>
-                        </v-expand-transition>
+                    </v-expansion-transition>
+                    </v-card-action>
+                   
                 </v-card>
             </v-col>
             <v-col class="ml-1">
@@ -255,9 +258,18 @@
                         </p>
                     </v-card-text>
                     <v-card-action>
-                        <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" href="" mt-n2>
+                        <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" @click="snackbar = true">
                             <v-icon>mdi-folder-multiple</v-icon>
                         </v-btn>
+                         <v-snackbar v-model="snackbar" :vertical="vertical">
+                            {{ text }}
+
+                            <template v-slot:action="{ attrs }">
+                                <v-btn color="red" text v-bind="attrs" @click="snackbar = false">
+                                    Close
+                                </v-btn>
+                            </template>
+                        </v-snackbar>
                     </v-card-action>
                 </v-card>
             </v-col>
@@ -286,11 +298,21 @@
                         </p>
                     </v-card-text>
                     <v-card-action>
-                        <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" href="">
+                        <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" @click="snackbar = true" >
                             <v-icon>mdi-folder-multiple</v-icon>
                         </v-btn>
+                        <v-snackbar v-model="snackbar" :vertical="vertical">
+                            {{ text }}
+
+                            <template v-slot:action="{ attrs }">
+                                <v-btn color="red" text v-bind="attrs" @click="snackbar = false">
+                                    Close
+                                </v-btn>
+                            </template>
+                        </v-snackbar>
                     </v-card-action>
                 </v-card>
+                
             </v-col>
         </v-row>
             
@@ -301,6 +323,14 @@
 export default {
     data: () => ({
       show: false,
+      snackbar: false,
+      text: 'Pas encore de productions disponible',
+      vertical: true,
     }),
+    methods: {
+        test(){
+            alert('test')
+        }
+    }
 }
 </script>
