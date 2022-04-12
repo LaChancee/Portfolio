@@ -1,4 +1,5 @@
 <template>
+
   <v-container fluid>
      <v-row class="text-center mt-13">
      <v-col class="mb-2">
@@ -8,7 +9,21 @@
       </v-col>
     </v-row>
 
+    <v-row justify="center">
+      <v-expansion-panels inset>
+        <v-expansion-panel>
+          <v-expansion-panel-header color="#5000ca" dark>
+              Mes projets de première année
+          </v-expansion-panel-header>
+          <v-expansion-panel-content>
+            ceciest un test
+          </v-expansion-panel-content>      
+        </v-expansion-panel>
+    </v-expansion-panels>
+    </v-row>
     <v-row class="ma-12" >
+    
+
       <v-col class="ml-12">
         <v-card elevation="15" class="ma-12" max-width="300" height="250" id="card" @load="card()">
           <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon> <span style="font-weight:bold" color="#5000ca" class="ml-2"> Les outils</span>  </v-card-title>
@@ -80,7 +95,7 @@
     </v-row>
     <v-row class="ma-12" justify="center">
       
-      <v-btn elevation="22" x-large color="#5000ca" dark style="width:200px" > Mon CV</v-btn>
+      <v-btn disabled elevation="22" x-large color="#5000ca" dark style="width:200px" > Mon CV</v-btn>
     </v-row>
   </v-container>
 </template>

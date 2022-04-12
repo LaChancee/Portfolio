@@ -12,7 +12,7 @@
         <v-card class="ma-4 " elevation="0" style="font-size:20px;" width="1500">
           <h2><span style="color:#5000ca" class="font-weight-bold">Contexte :</span></h2>
             <p class="flex justify-center">Netkoders est une société créer par Michael Lebreton qui est le gérant de cette dernière, 
-            ainsi chaque année il proposent à des étudiants de les prendre en stage pour finaliser ou commencer un projet. 
+            ainsi chaque année il propose à des étudiants de les prendre en stage pour finaliser ou commencer un projet. 
             Cette société propose des prestations de services pour des créations de site ou application web ou autre en fonction des clients, 
             de plus, Netkoders propose aussi des formations à différent tarifs. <br> 
             <br></p>
