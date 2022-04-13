@@ -9,9 +9,10 @@
       class="App-bar"     
       app
       fluid
+     
     >
   
-    <v-app-bar-nav-icon class="hidden-sm-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon style='z-index:20001;' class="hidden-sm-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-app-bar-title class="hidden-sm-and-up"> <span style="color:#5000ca">Miharisoa</span>.fr </v-app-bar-title>
     
       <!-- BARRE NAVIGATION -->
@@ -48,6 +49,7 @@
         fixed
         floating
         id="navDrawer"
+        style='z-index:99999; '
         >
           <v-list nav dense >
             <v-list-item-group
@@ -114,7 +116,9 @@ export default {
   data: () => ({
       drawer: false,
       group: null,
-      svg: true
+      svg: true,
+      zIndex: 0,
+
     }),
 
     watch: {
@@ -125,11 +129,13 @@ export default {
 };
 </script>
 <style scoped>
-
-
-.v-footer--absolute {
-  width: auto !important;
+ .v-navigation-drawer__content {
+   z-index: inherit;
+   position: relative;
 }
+
+
+
   html {
     height: 100%;
   }

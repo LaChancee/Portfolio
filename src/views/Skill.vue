@@ -9,18 +9,7 @@
       </v-col>
     </v-row>
 
-    <v-row justify="center">
-      <v-expansion-panels inset>
-        <v-expansion-panel>
-          <v-expansion-panel-header color="#5000ca" dark>
-              Mes projets de première année
-          </v-expansion-panel-header>
-          <v-expansion-panel-content>
-            ceciest un test
-          </v-expansion-panel-content>      
-        </v-expansion-panel>
-    </v-expansion-panels>
-    </v-row>
+   
     <v-row class="ma-12" >
     
 

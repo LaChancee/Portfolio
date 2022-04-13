@@ -12,18 +12,47 @@
          
         <v-row class="ma-12" fluid>
             <h2  class=" font-weight-bold "  :class="[$vuetify.breakpoint.mdAndUp ? 'h2' : 'subtitle-1']">Ateliers de professionalisation de <span style="color:#5000ca">première </span> année</h2>
-            <v-expansion-panels focusable>
-                <v-expansion-panel v-for="ap of apPremiereAnnee" :key="ap.title">
+            <v-expansion-panels focusable style="position : relative; z-index:0;" >
+                <v-expansion-panel v-for="ap in apPremiereAnnee" :key="ap.title">
                 <v-expansion-panel-header>{{ap.title}} {{ap.subtitle}}</v-expansion-panel-header>
                 <v-expansion-panel-content>
                     <v-card elevation=0>
                         <v-card-text>
-                            {{ap.content}}
-                            <h4>Compétences visées</h4>
-                            <p>{{ap.tags}}</p>
+                            {{ap.content}} 
+                           
+                            <h4 class="mt-1">Compétences visées</h4>
+                            <span v-for="tag in ap.tags" :key="tag">{{tag}} <br></span>
                         </v-card-text>
+                        <v-card-action>
+                        <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" target="_blank" v-bind:href="ap.link">
+                            <v-icon>mdi-folder-multiple</v-icon>
+                        </v-btn>
+                        </v-card-action>
                     </v-card>
                     
+                </v-expansion-panel-content>
+            </v-expansion-panel>
+        </v-expansion-panels>
+        </v-row>
+        <v-row class="ma-12" fluid>
+            <h2  class=" font-weight-bold "  :class="[$vuetify.breakpoint.mdAndUp ? 'h2' : 'subtitle-1']">Ateliers de professionalisation de <span style="color:#5000ca">deuxième </span> année</h2>
+            <v-expansion-panels focusable >
+                <v-expansion-panel v-for="ap in apDeuxiemeAnnee" :key="ap.title">
+                <v-expansion-panel-header>{{ap.title}} {{ap.subtitle}}</v-expansion-panel-header>
+                <v-expansion-panel-content>
+                    <v-card elevation=0>
+                        <v-card-text>
+                            {{ap.content}} 
+                           
+                            <h4 class="mt-1">Compétences visées</h4>
+                            <span v-for="tag in ap.tags" :key="tag">{{tag}} <br></span>
+                        </v-card-text>
+                        <v-card-action>
+                        <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" target="_blank" v-bind:href="ap.link">
+                            <v-icon>mdi-folder-multiple</v-icon>
+                        </v-btn>
+                        </v-card-action>
+                    </v-card>
                 </v-expansion-panel-content>
             </v-expansion-panel>
         </v-expansion-panels>
@@ -191,3 +220,9 @@ export default {
     
 }
 </script>
+<style scoped>
+.v-item-group theme--light v-expansion-panels v-expansion-panels--focusable{
+   z-index: inherit;
+   position: relative;
+}
+</style>
