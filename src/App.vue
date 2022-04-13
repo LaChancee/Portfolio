@@ -12,6 +12,7 @@
     >
   
     <v-app-bar-nav-icon class="hidden-sm-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-title class="hidden-sm-and-up"> <span style="color:#5000ca">Miharisoa</span>.fr </v-app-bar-title>
     
       <!-- BARRE NAVIGATION -->
       <div class="hidden-xs-only">

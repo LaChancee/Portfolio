@@ -17,7 +17,7 @@
       justify="center">
       <v-col >
         <v-card elevation="0" class="ma-12 text-md-left text-justify " >
-        <v-card-title style="font-size:30px" :class="[$vuetify.breakpoint.smAndUp ? 'heading' : 'subtitle-1']" > <h1> Bienvenu !</h1> </v-card-title>
+        <v-card-title style="font-size:30px" :class="[$vuetify.breakpoint.mdAndUp ? 'heading' : 'subtitle-1']" > <h1> Bienvenu !</h1> </v-card-title>
           <v-card-text style=" line-height:1.2em " :class="[$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1']" class="text-justify" > Je suis étudiant au Lycée Victor-et-Hélène-Basch 
             (VHB) en BTS SIO depuis bientôt 2 ans.<br>
           <br>Je continue à développer et à travailler mes compétences tout au long de ma formation et en dehors de celle-ci. <br>
