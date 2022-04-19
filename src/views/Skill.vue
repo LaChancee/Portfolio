@@ -3,14 +3,14 @@
   <v-container fluid>
      <v-row class="text-center mt-13">
      <v-col class="mb-2">
-        <h1 class="font-weight-bold mb-2" :class="[$vuetify.breakpoint.mdAndUp ? 'display-3' : 'h1']">
+        <h1 class="font-weight-bold mb-2" :class="[$vuetify.breakpoint.smAndUp ? 'display-3' : 'h1']">
           Mes <span style="color:#5000ca">compétences</span>
         </h1>
       </v-col>
     </v-row>
 
    
-    <v-row class="ml-12 mt-12" >
+    <v-row class="ma-5 " >
     
 
       <v-col class="">

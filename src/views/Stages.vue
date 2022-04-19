@@ -2,7 +2,7 @@
   <v-container fluid>
      <v-row class="text-center mt-13" fluid>
      <v-col class="mb-2">
-        <h1 class=" font-weight-bold mb-2"  :class="[$vuetify.breakpoint.mdAndUp ? 'display-3' : 'h1']">
+        <h1 class=" font-weight-bold mb-2"  :class="[$vuetify.breakpoint.smAndUp ? 'display-3' : 'h1']">
           Mes <span style="color:#5000ca">stages </span> 
         </h1>
       </v-col>
