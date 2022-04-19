@@ -3,10 +3,10 @@
     <v-row class="text-center mt-13">
      <v-col class="mb-2">
         <h1 class="hidden-md-and-up font-weight-bold mb-2 ">
-          Hey ! Je suis <span style="color:#5000ca">Miharisoa</span>  et bienvenu sur mon <span style="color:#5000ca">portfolio</span>
+          Hey ! Je suis <span style="color:#5000ca">Miharisoa Babef</span>  et bienvenu sur mon <span style="color:#5000ca">portfolio</span>
         </h1>
         <h1 class="hidden-sm-and-down display-3  font-weight-bold mb-2 ">
-          Hey ! Je suis <span style="color:#5000ca">Miharisoa</span>  et bienvenu sur mon <span style="color:#5000ca">portfolio</span>
+          Hey ! Je suis <span style="color:#5000ca">Miharisoa Babef</span>  et bienvenu sur mon <span style="color:#5000ca">portfolio</span>
         </h1>
 
         

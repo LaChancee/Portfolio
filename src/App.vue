@@ -17,6 +17,7 @@
     
       <!-- BARRE NAVIGATION -->
       <div class="hidden-xs-only">
+        
         <router-link to='/' style="text-decoration: none; color: inherit;">
           <v-btn color="#5000ca" elevation="0" class="ma-3 white--text"  dressed>
             Accueil
