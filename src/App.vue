@@ -13,7 +13,7 @@
     >
   
     <v-app-bar-nav-icon style='z-index:20001;' class="hidden-sm-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-app-bar-title class="hidden-sm-and-up"> <span style="color:#5000ca">Miharisoa</span>.fr </v-app-bar-title>
+      <v-app-bar-title class="hidden-sm-and-up" ><a href="/" style="text-decoration: none; color: #5000ca;">Miharisoa</a>.fr </v-app-bar-title>
     
       <!-- BARRE NAVIGATION -->
       <div class="hidden-xs-only">
@@ -94,6 +94,24 @@
       <v-main  >
         <v-container fluid fill-height  id="Test">
             <router-view></router-view>
+            <v-fab-transition>
+              <v-btn
+              color="#5000ca"
+              fab
+              dark
+              x-large
+              fixed
+              bottom
+              right
+              @click="top"
+              elevation="15"
+              v-scroll="onScroll"
+              v-show="fab"
+              >
+                <v-icon>mdi-chevron-up</v-icon>
+              </v-btn>
+            </v-fab-transition>
+              
           </v-container>
       </v-main>
       
@@ -119,8 +137,28 @@ export default {
       group: null,
       svg: true,
       zIndex: 0,
+      fab: false
+      
 
     }),
+  methods: {
+    top() {
+      window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+    },
+    
+    // function that hide the button when the user scroll down
+      onScroll (e) {
+      if (typeof window === 'undefined') return
+      const top = window.pageYOffset ||   e.target.scrollTop || 0
+      this.fab = top > 20
+    },
+    
+    
+  },
 
     watch: {
       group () {

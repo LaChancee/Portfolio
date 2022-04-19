@@ -13,7 +13,7 @@
       </v-col>
     </v-row>
 
-    <v-row class="" align="center"
+    <v-row  align="center"
       justify="center">
       <v-col >
         <v-card elevation="0" class="ma-12 text-md-left text-justify " >

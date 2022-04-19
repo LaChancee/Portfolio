@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-     <v-row class="text-center mt-13" fluid>
+     <v-row class="text-center mt-13" id="top" fluid>
      <v-col class="mb-2">
         <h1 class=" font-weight-bold mb-2"  :class="[$vuetify.breakpoint.smAndUp ? 'display-3' : 'h1']">
           Mes <span style="color:#5000ca">stages </span> 
@@ -89,8 +89,11 @@
           </v-card-action>
         </v-card>
       </v-col>
-    
+   
     </v-row>
+    
+    
+     
   </v-container>
 </template>
 <script>

@@ -82,10 +82,11 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row class="ma-12" justify="center">
+    <v-row disabled class="ma-12" justify="center">
       
-      <v-btn disabled elevation="22" x-large color="#5000ca" dark style="width:200px" > Mon CV</v-btn>
+      <v-btn  elevation="22" x-large color="#5000ca" dark style="width:200px" > Mon CV</v-btn>
     </v-row>
+    
   </v-container>
 </template>
 <script>
