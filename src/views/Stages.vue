@@ -2,7 +2,7 @@
   <v-container fluid>
      <v-row class="text-center mt-13" fluid>
      <v-col class="mb-2">
-        <h1 class="display-3 font-weight-bold mb-2">
+        <h1 class=" font-weight-bold mb-2"  :class="[$vuetify.breakpoint.mdAndUp ? 'display-3' : 'h1']">
           Mes <span style="color:#5000ca">stages </span> 
         </h1>
       </v-col>
@@ -10,8 +10,8 @@
     <v-row>
       
         <v-card class="ma-4 " elevation="0" style="font-size:20px;" width="1500">
-          <h2><span style="color:#5000ca" class="font-weight-bold">Contexte :</span></h2>
-            <p class="flex justify-center">Netkoders est une société créer par Michael Lebreton qui est le gérant de cette dernière, 
+          <h2 :class="[$vuetify.breakpoint.mdAndUp ? 'h2' : 'subtitle-1']"><span style="color:#5000ca" class="font-weight-bold">Contexte :</span></h2>
+            <p class="flex justify-center text-justify" :class="[$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1']">Netkoders est une société créer par Michael Lebreton qui est le gérant de cette dernière, 
             ainsi chaque année il propose à des étudiants de les prendre en stage pour finaliser ou commencer un projet. 
             Cette société propose des prestations de services pour des créations de site ou application web ou autre en fonction des clients, 
             de plus, Netkoders propose aussi des formations à différent tarifs. <br> 
@@ -24,9 +24,9 @@
     </v-row>
     <v-row class="ma-12">
       <v-col>
-        <v-card width="700" height="640" elevation="15" shaped class="text-size"  >
+        <v-card width="700"  elevation="15" shaped class="text-size"  >
           <v-card-title  >
-            <v-icon color="#5000ca">mdi-desktop-mac</v-icon> <span class="ml-2"> Conception d'application permettant de créer des rapports  </span>
+            <v-icon color="#5000ca">mdi-desktop-mac</v-icon> <span class="ml-2 font-weight-bold" :class="[$vuetify.breakpoint.mdAndUp ? 'title' : 'subtitle-1']"> Conception d'application permettant de créer des rapports  </span>
           </v-card-title >
           <v-card-text>
             <h3>25 mai au 6 juillet 2021 pendant 6 semaines</h3>
@@ -58,9 +58,9 @@
         </v-card>
       </v-col>
       <v-col>
-        <v-card width="700" height="640" elevation="15" shaped class="mr-6">
+        <v-card width="700"  elevation="15" shaped class="mr-6">
           <v-card-title  >
-            <v-icon color="#5000ca">mdi-desktop-mac</v-icon> <span class="ml-2"> Réalisation d'un site de e-commerce E-Store sous Laravel</span>
+            <v-icon color="#5000ca">mdi-desktop-mac</v-icon> <span class="ml-2 font-weight-bold" :class="[$vuetify.breakpoint.mdAndUp ? 'title' : 'subtitle-1']"> Réalisation d'un site de e-commerce E-Store sous Laravel</span>
           </v-card-title >
           <v-card-text>
             <h3>4 janvier au 11 février 2022 pendant 5 semaines et 4 jours</h3>
