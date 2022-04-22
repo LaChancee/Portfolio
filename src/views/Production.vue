@@ -25,7 +25,7 @@
                         </v-card-text>
                         <v-card-action>
                         <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" target="_blank" v-bind:href="ap.link">
-                            <v-icon>mdi-folder-multiple</v-icon>
+                            Productions
                         </v-btn>
                         </v-card-action>
                     </v-card>
@@ -49,7 +49,7 @@
                         </v-card-text>
                         <v-card-action>
                         <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" target="_blank" v-bind:href="ap.link">
-                            <v-icon>mdi-folder-multiple</v-icon>
+                            Productions
                         </v-btn>
                         </v-card-action>
                     </v-card>
@@ -220,9 +220,3 @@ export default {
     
 }
 </script>
-<style scoped>
-.v-item-group theme--light v-expansion-panels v-expansion-panels--focusable{
-   z-index: inherit;
-   position: relative;
-}
-</style>

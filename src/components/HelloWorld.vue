@@ -30,17 +30,20 @@
               <v-icon>mdi-folder-multiple</v-icon>
             </v-btn>
           </router-link>
-          <v-btn  color="#5000ca" elevation="22" fab small dark class="ma-3"  x-large>
+          <v-btn  color="#5000ca" elevation="22" fab small dark class="ma-3"  @click="tets" x-large>
             <v-icon>mdi-email</v-icon>
           </v-btn>
         </v-card>
       </v-col>
      
       <v-col class="ml-26 mb-5 hidden-md-and-down">
-        <v-img  max-height="459" max-width="500" src="../assets/coucou.png" id="pouce" @load="go" ></v-img>
+        <v-img  max-height="459" max-width="500" src="../assets/coucou.webp" id="pouce" @load="go" ></v-img>
       </v-col>
     </v-row>
-   
+   <v-row>
+     
+
+   </v-row>
   
   </v-container>
   
@@ -53,6 +56,7 @@
     name: 'BaseVue',
     
     data: () => ({
+      showModal:false,
       
     }),
     methods:{
@@ -63,11 +67,14 @@
           scale: 1,
           rotate: '0.05turn',
           direction:'alternate',
-          loop: true,
+          
           duration:'1200'
 
         })},
-      submit(){}
+         showDetails(){
+           this.showModal = true;
+       },
+
     },
     computed: {
     fontSize() {
