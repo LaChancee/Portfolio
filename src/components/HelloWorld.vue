@@ -3,10 +3,10 @@
     <v-row class="text-center mt-13">
      <v-col class="mb-2">
         <h1 class="hidden-md-and-up font-weight-bold mb-2 ">
-          Hey ! Je suis <span style="color:#5000ca">Miharisoa Babef</span>  et bienvenu sur mon <span style="color:#5000ca">portfolio</span>
+          Hey ! Je suis <span style="color:#5000ca">Miharisoa Babef</span>  et bienvenue sur mon <span style="color:#5000ca">portfolio</span>
         </h1>
         <h1 class="hidden-sm-and-down display-3  font-weight-bold mb-2 ">
-          Hey ! Je suis <span style="color:#5000ca">Miharisoa Babef</span>  et bienvenu sur mon <span style="color:#5000ca">portfolio</span>
+          Hey ! Je suis <span style="color:#5000ca">Miharisoa Babef</span>  et bienvenue sur mon <span style="color:#5000ca">portfolio</span>
         </h1>
 
         
@@ -17,7 +17,7 @@
       justify="center">
       <v-col >
         <v-card elevation="0" class="ma-12 text-md-left text-justify " >
-        <v-card-title style="font-size:30px" :class="[$vuetify.breakpoint.mdAndUp ? 'heading' : 'subtitle-1']" > <h1> Bienvenu !</h1> </v-card-title>
+        <v-card-title style="font-size:30px" :class="[$vuetify.breakpoint.mdAndUp ? 'heading' : 'subtitle-1']" > <h1> Bienvenue !</h1> </v-card-title>
           <v-card-text style=" line-height:1.2em " :class="[$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1']" class="text-justify" > Je suis étudiant au Lycée Victor-et-Hélène-Basch 
             (VHB) en BTS SIO depuis bientôt 2 ans.<br>
           <br>Je continue à développer et à travailler mes compétences tout au long de ma formation et en dehors de celle-ci. <br>
@@ -30,19 +30,21 @@
               <v-icon>mdi-folder-multiple</v-icon>
             </v-btn>
           </router-link>
-          <v-btn  color="#5000ca" elevation="22" fab small dark class="ma-3"  @click="tets" x-large>
+          <v-btn  color="#5000ca" elevation="22" fab small dark class="ma-3"   @click="isShow = !isShow" x-large>
             <v-icon>mdi-email</v-icon>
           </v-btn>
         </v-card>
       </v-col>
      
       <v-col class="ml-26 mb-5 hidden-md-and-down">
-        <v-img  max-height="459" max-width="500" src="../assets/coucou.webp" id="pouce" @load="go" ></v-img>
+        <v-img  max-height="459" max-width="500" src="../assets/salut.png" id="pouce" @load="go" ></v-img>
       </v-col>
     </v-row>
    <v-row>
+     <v-scroll-x-transition mode="in" hide-on-leave="true">
+       <Contact msg="Contactez-moi" v-show="isShow" transition="fade-transition"/>
+      </v-scroll-x-transition>
      
-
    </v-row>
   
   </v-container>
@@ -51,12 +53,17 @@
 
 <script>
   import anime from 'animejs/lib/anime.es.js';
+  import Contact from '@/components/Contact.vue'
+
+
+ 
+
   
   export default {
     name: 'BaseVue',
     
     data: () => ({
-      showModal:false,
+      isShow:false,
       
     }),
     methods:{
@@ -84,6 +91,9 @@
       }
     }
   },
+   components: {
+    Contact
+  }
 
   };
 </script>

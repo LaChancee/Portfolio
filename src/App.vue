@@ -130,8 +130,9 @@
   <v-overlay
       :opacity="1"
       :value="overlay"
-      color="black"
+      color="#FFFFFf"
     >
+      
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgb(255, 255, 255); display: block; shape-rendering: auto;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
         <rect x="17.5" y="30" width="15" height="40" fill="#5000ca">
           <animate attributeName="y" repeatCount="indefinite" dur="1s" calcMode="spline" keyTimes="0;0.5;1" values="18;30;30" keySplines="0 0.5 0.5 1;0 0.5 0.5 1" begin="-0.2s"></animate>
@@ -190,7 +191,10 @@ export default {
       // hide the overlay when everything has loaded
       // you could choose some other event, e.g. if you're loading
       // data asynchronously, you could wait until that process returns
-      this.overlay = false
+      setTimeout(() => {
+      this.overlay = false;
+    }, 1200);
+      
     }, 
 
     watch: {
