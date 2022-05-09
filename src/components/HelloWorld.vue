@@ -15,6 +15,12 @@
 
     <v-row  align="center"
       justify="center">
+      
+         <div  class="hidden-md-and-up">
+          <v-img elevation="12" max-height="500" max-width="500" src="../assets/salut.webp" id="pouce" ></v-img>
+        </div>
+      
+      
       <v-col >
         <v-card elevation="0" class="ma-12 text-md-left text-justify " >
         <v-card-title style="font-size:30px" :class="[$vuetify.breakpoint.mdAndUp ? 'heading' : 'subtitle-1']" > <h1> Bienvenue !</h1> </v-card-title>
@@ -30,19 +36,19 @@
               <v-icon>mdi-folder-multiple</v-icon>
             </v-btn>
           </router-link>
-          <v-btn  color="#5000ca" elevation="22" fab small dark class="ma-3"   @click="isShow = !isShow" x-large>
+          <v-btn  color="#5000ca" elevation="22" fab small dark class="ma-3" href="#contact"  @click="isShow = !isShow" x-large>
             <v-icon>mdi-email</v-icon>
           </v-btn>
         </v-card>
       </v-col>
      
-      <v-col class="ml-26 mb-5 hidden-md-and-down">
-        <v-img  max-height="459" max-width="500" src="../assets/salut.png" id="pouce" @load="go" ></v-img>
+      <v-col class="ml-26 pl-12 mb-5 hidden-sm-and-down"> 
+          <v-img elevation="12" max-height="650" max-width="600" src="../assets/salut.webp" id="pouce" ></v-img>
       </v-col>
     </v-row>
    <v-row>
      <v-scroll-x-transition mode="in" hide-on-leave="true">
-       <Contact msg="Contactez-moi" v-show="isShow" transition="fade-transition"/>
+       <Contact msg="Contactez-moi" v-show="isShow" id="contact" transition="fade-transition"/>
       </v-scroll-x-transition>
      
    </v-row>
@@ -52,13 +58,10 @@
 </template>
 
 <script>
-  import anime from 'animejs/lib/anime.es.js';
-  import Contact from '@/components/Contact.vue'
 
-
- 
-
+  import Contact from '@/components/Contact.vue';
   
+
   export default {
     name: 'BaseVue',
     
@@ -67,17 +70,6 @@
       
     }),
     methods:{
-      go(){
-        anime({
-          targets: '#pouce',
-          translateX: [250, 250],
-          scale: 1,
-          rotate: '0.05turn',
-          direction:'alternate',
-          
-          duration:'1200'
-
-        })},
          showDetails(){
            this.showModal = true;
        },
@@ -92,13 +84,31 @@
     }
   },
    components: {
-    Contact
+    Contact,
+    
   }
 
   };
 </script>
 
 <style scoped>
+#pouce{
+  background-image: url("../assets/svg.svg");
+  /* resize picture based on screen size */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  margin:0 auto !important;
+  overflow: auto;
+
+
+   
+ }
+html {
+  scroll-behavior: smooth;
+}
 :root {
 --font-size: 8px;
 @media screen and (min-width: 1444px) {

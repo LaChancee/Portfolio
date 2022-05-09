@@ -9,17 +9,14 @@
       </v-col>
     </v-row>
 
-   
-    <v-row class="ma-5 " >
-    
-
-      <v-col class="">
-        
+   <v-scroll-x-transition mode="in" hide-on-leave="true">
+     <v-row class="ma-5 " >
+      <v-col>
           <v-card rounded  class="card" elevation="15"   width="300" id="card1" @load="card" >
             <v-card-title style="font-size:20px" > <v-icon color="#5000ca"> mdi-desktop-mac </v-icon> <span style="font-weight:bold" color="#5000ca" class="ml-2"> Les outils</span>  </v-card-title>
               <v-card-text style="font-size:17px"> 
               - Visual Studio Code <br>
-              - Git <br>
+              - Git <br>  
               - GLPI<br>
               - PGI <br>
               - Azur DevOps <br>
@@ -41,8 +38,6 @@
               - VueJs/ Vuetify<br>
               - MySQL<br>
               - Javascript
-
-            
             </v-card-text>
             <router-link to='/production' style="text-decoration: none; color: inherit;">
               <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" href="/production">
@@ -59,9 +54,7 @@
               - Bonnes pratiques OWASP<br>
               - Azur DevOps <br>
               - Diagramme de Gantt <br> <br>               
-            
             </v-card-text>
-        
             <router-link to='/production' style="text-decoration: none; color: inherit;">
               <v-btn color="#5000ca" rounded elevation="0" dark class="ma-3" href="/production">
                 <v-icon>mdi-folder-multiple</v-icon>
@@ -84,27 +77,23 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row disabled class="ma-12" justify="center">
+   </v-scroll-x-transition>
+    <v-row  class="ma-12" justify="center">
+      <a src="../assets/CV.pdf" type="application/pdf" width="100%" height="600px"/> 
+      <v-btn disabled elevation="22" x-large color="#5000ca" href="../assets/CV.pdf" dark style="width:200px" > 
       
-      <v-btn disabled elevation="22" x-large color="#5000ca" dark style="width:200px" > Mon CV</v-btn>
+      </v-btn>
     </v-row>
     
   </v-container>
 </template>
 <script>
-import anime from 'animejs/lib/anime.es.js';
 export default ({
   setup() {
     
   },
   methods:{
-    card(){
-      anime({
-        targets: ['#card1','#card2','#card3','#card4'],
-        translateY: 270,
-        duration:'1200'
-      });
-    }
+    
   }
 })
 </script>
